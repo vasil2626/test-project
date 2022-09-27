@@ -1,0 +1,64 @@
+.nav{
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.nav_wrapper{
+    margin:  0 auto;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_logo{
+    font-size: 35px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nav_links{
+    display: flex;
+    font-size: 18px;
+}
+
+
+.nav_link_list{
+    &:not(:last-child){
+        margin-right: 50px;
+    }
+    cursor: pointer;
+}
+
+.list_link{
+    color: #343434;
+
+}
+
+.nav_end_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav_lang{
+    display: inline-flex;
+   
+}
+
+.lang{
+    &:not(:last-child){
+        margin-right: 15px;
+    }
+    cursor: pointer;
+    color: #343434;
+
+}
+
+.go_to_text{
+color: #343434;
+
+}
