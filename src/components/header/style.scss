@@ -23,8 +23,16 @@
 .nav_links{
     display: flex;
     font-size: 18px;
+
+    @media (max-width: 815px) {
+        display: none;
+    }
 }
 
+.burger{
+    
+
+}
 
 .nav_link_list{
     &:not(:last-child){
@@ -33,9 +41,31 @@
     cursor: pointer;
 }
 
-.list_link{
+.unselected{
     color: #343434;
 
+}
+
+.unselected.active,
+ .unselected:hover{
+    color: #388AF3;
+    position: relative;
+
+   
+}
+
+.unselected.active{
+    &:before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 7px;
+        height: 7px;
+        background: #388AF3;
+        border-radius: 50%;
+        transform: translate(-50%, 50%);
+    }
 }
 
 .nav_end_wrapper{
@@ -60,5 +90,25 @@
 
 .go_to_text{
 color: #343434;
+&:hover{
+    color: #388AF3;
+}
+}
 
+.nav_go_project{
+    position: relative;
+   
+}
+
+.go_to_image{
+    background-image: url("../../../assets/navbar/go_arrow.svg");
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: auto;
+    background-size: cover;
+    background-position: center;
 }

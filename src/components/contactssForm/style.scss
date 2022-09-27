@@ -1,0 +1,91 @@
+.form_wrapper{
+    width: 100%;
+    margin-top: 97px;
+}
+
+.form{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 50%;
+    gap: 30px;
+    @media  (max-width: 1190px) {
+        width: 100%;
+    display: grid;
+    grid-template-columns: 80%;
+    gap: 30px;
+    grid-auto-flow: dense;
+    }
+}
+
+.form_input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 20px;
+    &:nth-child(1){
+        width: 430px;
+        @media  (max-width: 1190px) {
+            width: 100%;
+
+        }
+    }
+    &:nth-child(2){
+        width: 278px;
+        @media  (max-width: 1190px) {
+            width: 100%;
+        }
+    }
+    &:nth-child(3){
+        @media  (max-width: 1190px) {
+            width: 100%;
+
+        }
+
+    }
+ 
+  
+
+    &::placeholder{
+        color:#cecece ;
+        font-size: 20px;
+        padding: 2px 0;
+    }
+
+    &::after {
+        position: relative;
+        top: -3px;
+        left: 1px;
+        display: inline-block;
+        content: "*";
+        color: #d0011b;
+      }
+      
+}
+
+.form_check_area{
+    width: 38%;
+    display: flex;
+    align-items: center;
+    margin-top: 31px;
+    justify-content: space-around;
+
+    @media  (max-width: 1190px) {
+        width: 60%;
+    }
+}
+
+.__radio{
+    width: 30px;
+    height: 30px;
+}
+
+.form_privacy{
+font-size: 20px;
+color: #cecece;
+}
+
+._privacy_link{
+    font-size: 20px;
+    color: #388AF3;
+}
+
